@@ -4,17 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucaslu/lucas-lu-brainflix-api.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lucas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lucaslu/lucas-lu-brainflix-api/issues"
   },
-  "homepage": "https://github.com/lucaslu/lucas-lu-brainflix-api#readme"
+  "homepage": "https://github.com/lucaslu/lucas-lu-brainflix-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
