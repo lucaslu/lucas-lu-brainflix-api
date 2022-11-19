@@ -3,18 +3,36 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "nodemonConfig": {
+    "ext": "js",
+    "ignore": [
+      "*.test.ts",
+      "data/*"
+    ],
+    "delay": "2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucaslu/lucas-lu-brainflix-api.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Lucas",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lucaslu/lucas-lu-brainflix-api/issues"
   },
-  "homepage": "https://github.com/lucaslu/lucas-lu-brainflix-api#readme"
+  "homepage": "https://github.com/lucaslu/lucas-lu-brainflix-api#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  }
 }
