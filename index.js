@@ -9,12 +9,7 @@ const videoRouter = require("./routes/videos");
 
 app.use(cors());
 app.use(express.json());
-
-// app.get("/", (_req, res) =>
-//   res.sendFile(path.join(__dirname, "public", "index.html"))
-// );
 app.use(express.static(path.join(__dirname, "public")));
-
 app.use("/videos", videoRouter);
 
 const PORT = process.env.PORT || 5500;

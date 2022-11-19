@@ -107,7 +107,7 @@ router.delete("/:videoId/comments/:commentId", (req, res) => {
 
     writeJSONFile(videosJSONFile, videos);
     delete foundComment.likes;
-    res.json({ ...foundComment });
+    res.json(foundComment);
   } else {
     res.status(404).json({ errorMessage: "Comment not found" });
   }
